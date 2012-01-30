@@ -1,9 +1,4 @@
-if (!$project)
-{
-  "Please load a project to run the uninstall script."
-  exit 1
-}
-
+$project = Get-Project
 $regSubkey = "\EnterpriseTools\QualityTools\TestTypes\{13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b}\TestTypeExtensions\AsyncTestClassAttribute"
 $machineReg = "hklm:\" + $project.DTE.RegistryRoot
 $userReg = "hkcu:\" + $project.DTE.RegistryRoot
