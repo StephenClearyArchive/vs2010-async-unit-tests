@@ -5,6 +5,11 @@ using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Threading.Tasks;
 
+// Notes:
+//  1) RESTART Visual Studio if this is the first time you've installed this package.
+//  2) If you're running VS2010, you'll need to reference AsyncCtpLibrary to write async unit tests.
+//  3) Feel free to delete this file.
+
 // It's useful to pull in this namespace, especially if you use AsyncContext (see the advanced examples, below).
 using Nito.AsyncEx.UnitTests;
 
@@ -28,6 +33,7 @@ namespace SimpleAsyncExamples
             throw new InvalidOperationException();
         }
 
+#if FAILTEST
         // A simple test that should fail; it fails an assertion from an async continuation.
         [TestMethod]
         public async void ShouldFail()
@@ -35,6 +41,7 @@ namespace SimpleAsyncExamples
             await TaskEx.Yield(); // Change this to "Task.Yield" on VS 11.
             Assert.Fail();
         }
+#endif
     }
 
     // Now for some more advanced async examples.
