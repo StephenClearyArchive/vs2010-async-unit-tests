@@ -6,8 +6,8 @@
   <title>Support for "async" MSTest unit tests.</title>
   <authors>Stephen Cleary</authors>
   <owners>Stephen Cleary</owners>
-  <summary>Asynchronous unit test support for Visual Studio. i.e., "[TestMethod] public async void MyTest()" actually works correctly.</summary>
-  <description>Asynchronous unit test support for Visual Studio. i.e., "[TestMethod] public async void MyTest()" actually works correctly.</description>
+  <summary>Asynchronous unit test support for Visual Studio. i.e., "[TestMethod] async void MyTest()" actually works correctly. NOTE: restart Visual Studio after installing!</summary>
+  <description>Asynchronous unit test support for Visual Studio. i.e., "[TestMethod] async void MyTest()" actually works correctly. NOTE: restart Visual Studio after installing!</description>
   <requireLicenseAcceptance>false</requireLicenseAcceptance>
   <language>en-US</language>
   <projectUrl>http://asyncunittests.codeplex.com/</projectUrl>
