@@ -32,7 +32,7 @@ function Register($regRoot)
   }
   else
   {
-    New-Item $regKey
+    New-Item $regKey -Force
     New-ItemProperty -Path $regKey -Name $regName -Value $regValue
   }
 }
