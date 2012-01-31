@@ -2,10 +2,10 @@ $regSubkey = "\EnterpriseTools\QualityTools\TestTypes\{13cdc9d9-ddb5-4fa4-a97d-d
 $regName = "AttributeProvider"
 $regValue = "Nito.AsyncEx.UnitTests.AsyncTestClassAttribute, Nito.AsyncEx.UnitTests"
 
-$machineReg = "hklm:\" + $project.DTE.RegistryRoot
-$userReg = "hkcu:\" + $project.DTE.RegistryRoot
-$machineConfigReg = "hklm:\" + $project.DTE.RegistryRoot + "_Config"
-$userConfigReg = "hkcu:\" + $project.DTE.RegistryRoot + "_Config"
+$machineReg = "hklm:\" + $dte.RegistryRoot
+$userReg = "hkcu:\" + $dte.RegistryRoot
+$machineConfigReg = "hklm:\" + $dte.RegistryRoot + "_Config"
+$userConfigReg = "hkcu:\" + $dte.RegistryRoot + "_Config"
 
 $installDir = (Get-ItemProperty -Path ($machineReg + "\Setup\VS")).ProductDir + "Common7\IDE\PrivateAssemblies"
 $existingDllPath = $installDir + "\Nito.AsyncEx.UnitTests.dll"
