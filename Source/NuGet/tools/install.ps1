@@ -43,20 +43,3 @@ if ($overwriteDlls)
   Register $machineConfigReg
   Register $userConfigReg
 }
-
-$myTemplatePath = $toolsPath + "\AsyncUnitTest.zip"
-$targetTemplatePath = (Get-ItemProperty -Path $userReg).UserItemTemplatesLocation + "\Visual C#\AsyncUnitTest.zip"
-$overwriteTemplate = true
-
-if (Test-Path $targetTemplatePath)
-{
-  $targetTemplate = Get-Item $targetTemplatePath
-  $myTemplate = Get-Item $myTemplatePath
-  if ($myTemplate.LastWriteTime -lt $targetTemplate.LastWriteTime)
-    $overwriteTemplate = false
-}
-
-if ($overwriteTemplate)
-{
-  Copy-Item -Path $myTemplatePath -Destination $targetTemplatePath -Force
-}
