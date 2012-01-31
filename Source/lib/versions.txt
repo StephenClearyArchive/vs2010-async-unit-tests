@@ -1,0 +1,3 @@
+Async CTP
+  Visual Studio 2010 SP1 Async CTP v3
+  http://msdn.microsoft.com/en-us/vstudio/gg316360
