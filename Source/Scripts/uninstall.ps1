@@ -6,7 +6,6 @@ $machineConfigReg = "hklm:\" + $project.DTE.RegistryRoot + "_Config"
 $userConfigReg = "hkcu:\" + $project.DTE.RegistryRoot + "_Config"
 $installDir = (Get-ItemProperty -Path ($machineReg + "\Setup\VS")).ProductDir + "Common7\IDE\PrivateAssemblies"
 $existingDllPath = $installDir + "\Nito.AsyncEx.UnitTests.dll"
-$targetTemplatePath = (Get-ItemProperty -Path $userReg).UserItemTemplatesLocation + "\Visual C#\AsyncUnitTest.zip"
 
 function Uninstall($path)
 {
@@ -22,6 +21,5 @@ Uninstall ($userReg + $regSubkey)
 Uninstall ($machineConfigReg + $regSubkey)
 Uninstall ($userConfigReg + $regSubkey)
 Uninstall $existingDllPath
-Uninstall $targetTemplatePath
 
 "Uninstall completed."
