@@ -1,3 +1,5 @@
+param($installPath, $toolsPath, $package, $project)
+
 $regSubkey = "\EnterpriseTools\QualityTools\TestTypes\{13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b}\TestTypeExtensions\AsyncTestClassAttribute"
 $regName = "AttributeProvider"
 $regValue = "Nito.AsyncEx.UnitTests.AsyncTestClassAttribute, Nito.AsyncEx.UnitTests"
