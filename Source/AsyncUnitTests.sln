@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nito.AsyncEx.UnitTests", "Nito.AsyncEx.UnitTests\Nito.AsyncEx.UnitTests.csproj", "{DEFD5D22-66A8-4692-9FE4-0EABAEDA934B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleTestProject", "SampleTestProject\SampleTestProject.csproj", "{998D387D-3887-4B3B-BFCD-ACFE735C0BF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6B007DFC-5B8A-4FFE-9A81-48832291F4E5}"
+	ProjectSection(SolutionItems) = preProject
+		AsyncUnitTests.vsmdi = AsyncUnitTests.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = AsyncUnitTests.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -13,6 +25,10 @@ Global
 		{DEFD5D22-66A8-4692-9FE4-0EABAEDA934B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEFD5D22-66A8-4692-9FE4-0EABAEDA934B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEFD5D22-66A8-4692-9FE4-0EABAEDA934B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{998D387D-3887-4B3B-BFCD-ACFE735C0BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{998D387D-3887-4B3B-BFCD-ACFE735C0BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{998D387D-3887-4B3B-BFCD-ACFE735C0BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{998D387D-3887-4B3B-BFCD-ACFE735C0BF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
