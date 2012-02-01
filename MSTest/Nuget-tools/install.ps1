@@ -2,7 +2,7 @@ param($installPath, $toolsPath, $package, $project)
 
 $regSubkey = "\EnterpriseTools\QualityTools\TestTypes\{13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b}\TestTypeExtensions\AsyncTestClassAttribute"
 $regName = "AttributeProvider"
-$regValue = "Nito.AsyncEx.UnitTests.AsyncTestClassAttribute, Nito.AsyncEx.UnitTests"
+$regValue = "Nito.AsyncEx.UnitTests.AsyncTestClassAttribute, Nito.AsyncEx.UnitTests.MSTest"
 
 $machineReg = "hklm:\" + $dte.RegistryRoot
 $userReg = "hkcu:\" + $dte.RegistryRoot
@@ -10,8 +10,8 @@ $machineConfigReg = "hklm:\" + $dte.RegistryRoot + "_Config"
 $userConfigReg = "hkcu:\" + $dte.RegistryRoot + "_Config"
 
 $installDir = (Get-ItemProperty -Path ($machineReg + "\Setup\VS")).ProductDir + "Common7\IDE\PrivateAssemblies"
-$existingDllPath = $installDir + "\Nito.AsyncEx.UnitTests.dll"
-$myDllPath = $toolsPath + "\Nito.AsyncEx.UnitTests.dll"
+$existingDllPath = $installDir + "\Nito.AsyncEx.UnitTests.MSTest.dll"
+$myDllPath = $toolsPath + "\Nito.AsyncEx.UnitTests.MSTest.dll"
 $overwriteDlls = $true
 
 if (Test-Path $existingDllPath)

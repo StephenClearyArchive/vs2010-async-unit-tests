@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+ <metadata>
+  <id>AsyncUnitTests-MSTest</id>
+  <version>1.0.0</version>
+  <title>Asynchronous unit test support for Visual Studio</title>
+  <authors>Stephen Cleary</authors>
+  <owners>Stephen Cleary</owners>
+  <summary>"[TestMethod] async void MyTest()" actually works correctly. NOTE: restart Visual Studio after installing!</summary>
+  <description>"[TestMethod] async void MyTest()" actually works correctly. NOTE: restart Visual Studio after installing!</description>
+  <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  <language>en-US</language>
+  <projectUrl>http://asyncunittests.codeplex.com/</projectUrl>
+<!--  <iconUrl>https://lh3.googleusercontent.com/-rWegFo7oREc/Tmgxy2qf6mI/AAAAAAAAFoE/15IERRFJ01I/s800/cadence%2525202%252520small.PNG</iconUrl> -->
+  <tags>nito async unit test asynchronous async-ctp await async-await net40 net45 netcore45 unit-test mstest</tags>
+  <references>
+   <reference file="Nito.AsyncEx.UnitTests.MSTest.dll" />
+  </references>
+<!--
+  <releaseNotes>
+  </releaseNotes>
+-->
+ </metadata>
+ <files>
+  <file src="..\MSTest\Source\Nito.AsyncEx.UnitTests.MSTest\**\*.cs" target="src\AsyncUnitTests" />
+  <file src="..\MSTest\Source\Nito.AsyncEx.UnitTests.MSTest\bin\Release\Nito.AsyncEx.UnitTests.MSTest.dll" target="lib\net40-client\Nito.AsyncEx.UnitTests.MSTest.dll" />
+  <file src="..\MSTest\Source\Nito.AsyncEx.UnitTests.MSTest\bin\Release\Nito.AsyncEx.UnitTests.MSTest.pdb" target="lib\net40-client\Nito.AsyncEx.UnitTests.MSTest.pdb" />
+  <file src="..\MSTest\Source\Nito.AsyncEx.UnitTests.MSTest\bin\Release\Nito.AsyncEx.UnitTests.MSTest.xml" target="lib\net40-client\Nito.AsyncEx.UnitTests.MSTest.xml" />
+  <file src="..\MSTest\NuGet-tools\install.ps1" target="tools\install.ps1" />
+  <file src="..\MSTest\Source\Nito.AsyncEx.UnitTests.MSTest\bin\Release\Nito.AsyncEx.UnitTests.MSTest.dll" target="tools\Nito.AsyncEx.UnitTests.MSTest.dll" />
+ </files>
+</package>

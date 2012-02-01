@@ -5,7 +5,7 @@ $userReg = "hkcu:\" + $dte.RegistryRoot
 $machineConfigReg = "hklm:\" + $dte.RegistryRoot + "_Config"
 $userConfigReg = "hkcu:\" + $dte.RegistryRoot + "_Config"
 $installDir = (Get-ItemProperty -Path ($machineReg + "\Setup\VS")).ProductDir + "Common7\IDE\PrivateAssemblies"
-$existingDllPath = $installDir + "\Nito.AsyncEx.UnitTests.dll"
+$existingDllPath = $installDir + "\Nito.AsyncEx.UnitTests.MSTest.dll"
 
 function Uninstall($path)
 {
