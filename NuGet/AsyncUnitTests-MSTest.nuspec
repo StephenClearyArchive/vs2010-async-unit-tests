@@ -6,8 +6,8 @@
   <title>Asynchronous unit test support for Visual Studio</title>
   <authors>Stephen Cleary</authors>
   <owners>Stephen Cleary</owners>
-  <summary>"[TestMethod] async void MyTest()" actually works correctly. NOTE: restart Visual Studio after installing!</summary>
-  <description>"[TestMethod] async void MyTest()" actually works correctly. NOTE: restart Visual Studio after installing!</description>
+  <summary>"[TestMethod] async void MyTest()" actually works correctly.</summary>
+  <description>"[TestMethod] async void MyTest()" actually works correctly.</description>
   <requireLicenseAcceptance>false</requireLicenseAcceptance>
   <language>en-US</language>
   <projectUrl>http://asyncunittests.codeplex.com/</projectUrl>

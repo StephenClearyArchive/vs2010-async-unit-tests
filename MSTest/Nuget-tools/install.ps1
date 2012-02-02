@@ -44,4 +44,5 @@ if ($overwriteDlls)
   Register $userReg
   Register $machineConfigReg
   Register $userConfigReg
+  [System.Windows.MessageBox]::Show("You must restart Visual Studio for the changes to take effect.", "Restart required", "OK", "Exclamation")
 }
