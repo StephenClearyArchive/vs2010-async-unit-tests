@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
  <metadata>
   <id>AsyncUnitTests-MSTest</id>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <title>Asynchronous unit test support for Visual Studio</title>
   <authors>Stephen Cleary</authors>
   <owners>Stephen Cleary</owners>
@@ -16,10 +16,9 @@
   <references>
    <reference file="Nito.AsyncEx.UnitTests.MSTest.dll" />
   </references>
-<!--
   <releaseNotes>
+   [1.0.1] Fixed leak in AsyncContext.WinForms.
   </releaseNotes>
--->
  </metadata>
  <files>
   <file src="..\MSTest\Source\Nito.AsyncEx.UnitTests.MSTest\**\*.cs" target="src\AsyncUnitTests" />
