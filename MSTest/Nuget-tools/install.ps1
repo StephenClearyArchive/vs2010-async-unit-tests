@@ -39,7 +39,17 @@ function Register($regRoot)
 
 if ($overwriteDlls)
 {
-  Copy-Item -Path $myDllPath -Destination $existingDllPath -Force
+  if (Test-Path $existingDllPath)
+  {
+    if (Test-Path ($existingDllPath + ".old"))
+    {
+      Remove-Item ($existingDllPath + ".old")
+    }
+
+    Rename-Item $existingDllPath ($existingDllPath + ".old")
+  }
+
+  Copy-Item -Path $myDllPath -Destination $existingDllPath
   Register $machineReg
   Register $userReg
   Register $machineConfigReg

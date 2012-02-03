@@ -20,6 +20,7 @@ Uninstall ($machineReg + $regSubkey)
 Uninstall ($userReg + $regSubkey)
 Uninstall ($machineConfigReg + $regSubkey)
 Uninstall ($userConfigReg + $regSubkey)
+Uninstall ($existingDllPath + ".old")
 Uninstall $existingDllPath
 
 "Uninstall completed."
