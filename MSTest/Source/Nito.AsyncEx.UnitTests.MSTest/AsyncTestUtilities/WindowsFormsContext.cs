@@ -33,11 +33,7 @@ internal static class WindowsFormsContext
             asyncVoidContext.Post(message.LaunchMessageImpl, state: null);
 
             // run the actual WinForms message loop
-            Exception exception = null;
-            Application.ThreadException += (_, ex) => { exception = ex.Exception; };
             Application.Run();
-            if (exception != null)
-                throw exception;
         }
     }
 
