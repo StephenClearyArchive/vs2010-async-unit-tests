@@ -25,7 +25,7 @@ public class SimpleAsyncUnitTests
 
 If you run these tests, you'll get this result:
 
-![Passing tests that should fail - Failing tests that should pass!](Why Do I Need This_BadMSTestBad.png)
+![Passing tests that should fail - Failing tests that should pass!](Why%20Do%20I%20Need%20This_BadMSTestBad.png)
 
 _That'll_ mess up your Red/Green/Refactor cycle!!!
 
@@ -74,4 +74,4 @@ Copy files into each of your test projects?
 
 Change **every** asynchronous test method to contain its own context?
 
-There must be a better way. [And now there is!](Getting Started.md)
+There must be a better way. [And now there is!](Getting%20Started.md)

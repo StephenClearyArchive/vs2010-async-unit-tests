@@ -52,6 +52,6 @@ public class SimpleAsyncUnitTests
 
 That's it! Two lines of code and we're good to go!
 
-![Much Better!](Getting Started_OKMSTestIForgiveYou.png)
+![Much Better!](Getting%20Started_OKMSTestIForgiveYou.png)
 
-`[AsyncTestClass]` works for both async and non-async unit tests, so use it everywhere! There is [an item template](Optional Component.md) to make it even easier.
+`[AsyncTestClass]` works for both async and non-async unit tests, so use it everywhere! There is [an item template](Optional%20Component.md) to make it even easier.

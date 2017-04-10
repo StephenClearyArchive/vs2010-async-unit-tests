@@ -46,6 +46,6 @@ When the unit test is run, the `AsyncContext` used is determined by these priori
 
 The `AsyncContext` used to run a test is displayed in the Test Results Details screen:
 
-![Here's how to open the test result details](Advanced Usage_ViewTestResultsDetails.png)
+![Here's how to open the test result details](Advanced%20Usage_ViewTestResultsDetails.png)
 
-![See! The AsyncContext is right there! No more guessing!](Advanced Usage_TestResults.png)
+![See! The AsyncContext is right there! No more guessing!](Advanced%20Usage_TestResults.png)
