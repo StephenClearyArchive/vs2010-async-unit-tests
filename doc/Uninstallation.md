@@ -1,3 +1,3 @@
 Uninstalling the NuGet package will leave the Async Unit Test type extension still attached to Visual Studio.
 
-If you want to uninstall it _completely_, then [follow these instructions.](http://asyncunittests.codeplex.com/releases/view/81567)
+If you want to uninstall it _completely_, then [follow these instructions.](uninstall.md)

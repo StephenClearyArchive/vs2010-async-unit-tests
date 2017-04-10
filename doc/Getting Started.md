@@ -1,6 +1,6 @@
 Let's take those tests that do not work as expected:
 
-{code:c#}
+````C#
 [TestClass](TestClass)
 public class SimpleAsyncUnitTests
 {
@@ -21,11 +21,11 @@ public class SimpleAsyncUnitTests
     Assert.Fail();
   }
 }
-{code:c#}
+````
 
-To give these tests an async-compatible context, all we have to do is [install the NuGet package](https://nuget.org/packages/AsyncUnitTests-MSTest), and change {{ [TestClass](TestClass) }} to {{ [AsyncTestClass](AsyncTestClass) }}.
+To give these tests an async-compatible context, all we have to do is [install the NuGet package](https://nuget.org/packages/AsyncUnitTests-MSTest), and change `[TestClass]` to `[AsyncTestClass]`.
 
-{code:c#}
+````C#
 using Nito.AsyncEx.UnitTests; // THIS LINE WAS ADDED
 
 [AsyncTestClass](AsyncTestClass) // THIS LINE WAS CHANGED
@@ -48,10 +48,10 @@ public class SimpleAsyncUnitTests
     Assert.Fail();
   }
 }
-{code:c#}
+````
 
 That's it! Two lines of code and we're good to go!
 
 ![Much Better!](Getting Started_OKMSTestIForgiveYou.png)
 
-{{ [AsyncTestClass](AsyncTestClass) }} works for both async and non-async unit tests, so use it everywhere! There is [an item template](Optional-Component) to make it even easier.
+`[AsyncTestClass]` works for both async and non-async unit tests, so use it everywhere! There is [an item template](Optional Component.md) to make it even easier.
